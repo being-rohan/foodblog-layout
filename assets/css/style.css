@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Rubik+Doodle+Shadow&display=swap');
+
+:root {
+  --color-white: #fff;
+  --color-dark: #000;
+  --color-primary: #9acd32;
+  --color-secondary: #a9a9a913;
+  --color-light: #fffef7;
+  --color-tertiary: #2c3b4b;
+}
+
+body {
+  background: url(https://good-food.cmsmasters.net/wp-content/uploads/2017/07/background.jpg);
+}
+
+.background {
+  background-color: var(--color-light);
+}
+
+.main .container {
+  max-width: 1400px;
+}
+.heighgt{
+  height: 500px;
+}
+
+/* ########## css for navigation ################# */
+
+.foodblog {
+  background: url(../images/foodblogBg.jpg) no-repeat center/cover;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+}
+
+.mainnavbar .navbar-nav {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: var(--color-dark);
+  font-size: 1.25rem;
+}
+
+.mainnavbar .navbar-toggler {
+  border-color: 2px solid var(--color-dark);
+}
+
+.mainnavbar .navbar-nav .nav-link {
+  color: var(--color-dark);
+  border-bottom: 2px solid var(--color-dark);
+}
+
+.mainnavbar .navbar-collapse {
+  margin-top: 1rem;
+}
+
+.mainnavbar .navbar-nav .active>.nav-link,
+.mainnavbar .navbar-nav .nav-link.active,
+.mainnavbar .navbar-nav .nav-link.show,
+.mainnavbar .navbar-nav .show>.nav-link,
+.mainnavbar .navbar-nav .nav-link:hover,
+.mainnavbar .navbar-nav .nav-link:focus {
+  color: var(--color-primary);
+}
+
+.mainnavbar .dropdown-menu {
+  background-color: var(--color-dark);
+  padding: 0;
+}
+
+.mainnavbar .dropdown-item {
+  color: var(--color-light);
+  border-bottom: 2px solid var(--color-light);
+}
+
+.mainnavbar .dropdown-item:hover,
+.mainnavbar .dropdown-item:focus,
+.mainnavbar .dropdown-item:active {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+
+/* ########### css for good time ############# */
+
+.onhoverimg {
+  position: relative;
+  height: 600px;
+}
+
+.onhoverimg img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  position: absolute;
+  bottom: 50px;
+  text-align: center;
+  color: var(--color-white);
+  opacity: 1;
+  transition: all .3s linear;
+}
+
+/* ############## css for philosophy section ############ */
+
+.philosophy .line {
+  height: 1px;
+  flex: 1;
+  background-color: var(--color-dark);
+}
+
+.philosophy .content-info {
+  border: 2px solid var(--color-tertiary);
+  background-color: var(--color-tertiary);
+  color: var(--color-white);
+  padding: 0 0.5rem;
+  margin-top: 16px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.letter {
+  font-size: 48px;
+  margin: 8px 45px 10px 28px;
+  line-height: 54px;
+  float: left;
+  color: #ff7045;
+}
+
+/* ############## css for philosophy section ############ */
+
+.primary-heading {
+  color: var(--color-tertiary);
+  margin: 0 0 10px;
+  font-size: 46px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* ################# css for recipe section ############ */
+
+.recipe-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.recipe-img a {
+  height: 250px;
+  width: 100%;
+  display: inline-block;
+}
+
+.recipe-time span {
+  flex-basis: 50%;
+}
+
+.recipe-time :nth-child(2) {
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+@media all and (min-width : 992px) {
+  .mainnavbar {
+    padding: 0;
+  }
+
+  .mainnavbar .navbar-brand {
+    height: 60px;
+    padding: .6rem .5rem .5rem;
+  }
+
+  .mainnavbar .navbar-nav .nav-link {
+    color: var(--color-dark);
+    display: block;
+    padding: 0 1rem;
+    height: 60px;
+    border-bottom: 0;
+    line-height: 60px;
+  }
+
+  .mainnavbar .navbar-collapse {
+    margin-top: 0;
+  }
+
+  .mainnavbar .nav-item {
+    margin-left: .5rem;
+    cursor: pointer;
+  }
+
+  .caption {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    color: var(--color-white);
+    opacity: 0;
+    transition: all .3s linear;
+  }
+
+  .onhoverimg:hover .caption {
+    opacity: 1;
+  }
+}
