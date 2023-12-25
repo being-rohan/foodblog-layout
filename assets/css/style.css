@@ -10,7 +10,7 @@
 }
 
 body {
-  background: url(https://good-food.cmsmasters.net/wp-content/uploads/2017/07/background.jpg);
+  background: url('https://good-food.cmsmasters.net/wp-content/uploads/2017/07/background.jpg')
 }
 
 .background {
@@ -20,9 +20,7 @@ body {
 .main .container {
   max-width: 1400px;
 }
-.heighgt{
-  height: 500px;
-}
+
 
 /* ########## css for navigation ################# */
 
